@@ -1,0 +1,65 @@
+body {
+  background-color: #FDE3A7; /* Light peach background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 800px; /* Adjust overall width */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card-container {
+  perspective: 1000px; /* Enable 3D perspective */
+}
+
+.card {
+  width: 400px; /* Adjust card width */
+  height: 500px; /* Adjust card height */
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+}
+
+.card.open {
+  transform: rotateY(180deg); /* Rotate card on open */
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide back face initially */
+  display: flex; /* Center content vertically */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-front img {
+  width: 70%;
+}
+
+.card-back .content {
+  text-align: left;
+}
+
+.card-back h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.card-back p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.flowers {
