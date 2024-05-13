@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Mother's Day Card - Interactive Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card-container">
+      <div class="card closed"> <div class="card-front">
+          <img src="https://i.ibb.co/XtwYSHx/Untitled-design-20240512-175344-0000.png" alt="Happy Mother's Day">
+          <h2>Happy Mother's Day, Mom!</h2>
+        </div>
+        <div class="card-back">
+          <div class="content">
+            <h3>Dear Mom,</h3>
+            <p>You are the best mom in the world. Thank you for everything you do. You're my rock, my confidante, and my biggest supporter. I love you more than words can say.</p>
+            <p>Here's a little something to show my appreciation. Click the flowers below to reveal a special message!</p>
+            <div class="flowers">
+              <img src="flower1.png" alt="Flower 1" class="flower" data-message="You're the sunshine in my life.">
+              <img src="flower2.png" alt="Flower 2" class="flower" data-message="Thank you for always believing in me.">
+              <img src="flower3.png" alt="Flower 3" class="flower" data-message="You inspire me every day.">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="open-button">Open Card</button>
+    </div>
+    <div id="confetti-container"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
